@@ -1,28 +1,15 @@
-'use client'
-import { useState } from "react"
-
-type TextInputProps = {
-  labelText?: string
+type InputProps = {
+  placeholder: string
 }
 
-export const TextInput = ({ labelText }: TextInputProps) => {
-  const [inputText, setInputText] = useState("")
-
+export const InputForm = ({
+  placeholder,
+}: InputProps) => {
   return (
-    <>
-      <label
-        htmlFor='text'
-        className='text-[18px] text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'
-      >
-        {labelText}
-      </label>
-      <input
-        type='text'
-        name='text'
-        placeholder={inputText}
-        onChange={(e) => setInputText(e.target.value)}
-        className='bg-transparent border-2 rounded-lg p-2 text-[22px]'
-      />
-    </>
+    <input
+      type="text"
+      placeholder={placeholder}
+      className="h-[27px] max-w-[557px] w-full border-[0.5px] border-black text-[14px]/[18px] placeholder:text-[#C4C4C4] pl-[12px]"
+    ></input>
   )
 }

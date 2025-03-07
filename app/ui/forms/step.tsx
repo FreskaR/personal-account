@@ -12,7 +12,7 @@ export const Step = ({ children, back, next, home }: StepProps) => {
   return (
     <div className='flex flex-col justify-between min-w-[500px] min-h-[200px]'>
       {children}
-      <NavigationButtons back={back} next={next} home={home} />
+        <NavigationButtons back={back} next={next} home={home} />
     </div>
   )
 }
