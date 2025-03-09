@@ -12,9 +12,9 @@ export const NavigationButtons = ({
   home,
 }: NavigationButtonsProps) => {
   return (
-    <div className='flex justify-between'>
+    <div className='flex justify-between items-center'>
       <div className={back == '' ? 'visible flex h-[22px] items-center ml-[26px]' : 'hidden'}>
-      <input type="radio" name='showList' className="appearance-none w-[16px] h-[16px] bg-[#FFEBC8] border border-black rounded-xl before:block before:h-[10px] before:w-[10px] before:bg-black before:rounded-full before:relative before:inset-y-0.5 before:inset-x-0.5 checked:before:visible before:invisible mr-[8px]"></input>
+        <input type="radio" name='showList' className="appearance-none w-[16px] h-[16px] bg-[#FFEBC8] border border-black rounded-xl before:block before:h-[10px] before:w-[10px] before:bg-black before:rounded-full before:relative before:inset-y-0.5 before:inset-x-0.5 checked:before:visible before:invisible mr-[8px]"></input>
         <p className='text-center text-[19px]/[22px]'>Раскрывать списки НД</p>
       </div>
       <Link href={back}>

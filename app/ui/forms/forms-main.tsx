@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import clsx from 'clsx';
 
 const links = [
-    {name: 'Распоряжение Эмитента на список к ОСА', href: '/forms/step-one'},
-    {name: 'Распоряжение Эмитента на предоставление информации из реестра', href: '/forms/second'},
+    {name: 'Распоряжение Эмитента на список к ОСА', href: '/forms/first/step-one'},
+    {name: 'Распоряжение Эмитента на предоставление информации из реестра', href: '/forms/second/step-one'},
     {name: 'Распоряжение Эмитента о предоставлении Списка лиц , имеющих право на получение доходов по ценным бумагам', href: '/forms/third'},
 ];
 
