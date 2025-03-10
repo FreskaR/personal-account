@@ -1,7 +1,6 @@
 'use client'
 import { useEffect, useRef } from 'react';
 import { Options, Calendar } from 'vanilla-calendar-pro';
-import { getDate } from 'vanilla-calendar-pro/utils';
 import 'vanilla-calendar-pro/styles/index.css';
 import CalendarSvg from '../svg-icons/calendar';
 
