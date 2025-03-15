@@ -18,7 +18,7 @@ export default function Page () {
             </div>
             <div className="flex">
               <p className="text-[14px]/[18px] mr-[45px]">Дата определения (фиксации) лиц</p>
-              <CalendarInput />
+              <CalendarInput calendarId="dateFix"/>
             </div>
           </div>
           <div className="border-[0.5px] border-black rounded-[28px] pt-[14px] pl-[26px] pb-[25px]">
@@ -37,7 +37,7 @@ export default function Page () {
                     <InputForm placeholder=""/>
                   </div>
                   <p className="mr-[27px]">дата принятия решения</p>
-                  <CalendarInput />
+                  <CalendarInput calendarId="dateDecision"/>
                 </div>
               </div>
             </div>
@@ -50,7 +50,7 @@ export default function Page () {
             </div>
             <div className="flex">
               <p className="text-[14px]/[18px] mr-[30px]">Дата проведения собрания</p>
-              <CalendarInput />
+              <CalendarInput calendarId="dateMeet"/>
             </div>
           </div>  
       </Step>

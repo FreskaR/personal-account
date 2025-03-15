@@ -7,13 +7,13 @@ import { RadioButton } from "@/app/ui/forms/radiobtn";
 export default function Page () {
   return (
     <div className="max-w-[1104px] h-[944px] border-[0.5px] border-black rounded-[28px] bg-[#F1F1F1] mt-[23px] p-[45px]" >
-      <Step back='/forms/second/step-two' next='/' >
+      <Step back='/forms/second/step-two' next='' >
           <p className="text-[#B82116] text-[15px]/[19px] font-bold text-center mb-[31px]">Распоряжение Эмитента на предоставление информации из реестра</p>
           <div className="border-[0.5px] border-black rounded-[28px] pt-[21px] pl-[26px] pb-[26px] mb-[45px]">
             <div className="flex items-center mb-[9px]">
                 <div className="mt-[-4px]"><CheckBox text=""/></div>
                 <p className="text-[14px]/[18px] font-bold mr-[26px]">Справка о состоянии лицевого счета зарегистрированного лица на дату</p>
-                <CalendarInput />
+                <CalendarInput calendarId="stateOnDate"/>
             </div>
             <div className="ml-[39px] mb-[9px]">
                 <div className="flex items-center mb-[9px]">

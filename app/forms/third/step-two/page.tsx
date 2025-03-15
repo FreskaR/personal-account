@@ -26,7 +26,7 @@ export default function Page () {
             </div>
             <div className="flex items-center mb-[14px]">
                 <p className="w-[364px] text-[14px]/[18px] mr-[40px]">Дата выплаты доходов</p>
-                <div className="w-[532px]"><CalendarInput /></div>
+                <div className="w-[532px]"><CalendarInput calendarId="dateIncomePayment"/></div>
             </div>
             <div className="flex items-center mb-[14px]">
                 <p className="w-[364px] text-[14px]/[18px] mr-[40px]">Полное официальное наименование агента(ов) по выплате доходов (при его (их) наличии)</p>

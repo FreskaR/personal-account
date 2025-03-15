@@ -4,7 +4,11 @@ import { Options, Calendar } from 'vanilla-calendar-pro';
 import 'vanilla-calendar-pro/styles/index.css';
 import CalendarSvg from '../svg-icons/calendar';
 
-export default function CalendarInput() {
+type CalendarProps = {
+  calendarId: string;
+}
+
+export default function CalendarInput({ calendarId }: CalendarProps) {
   useEffect(() => {
     const options: Options = {
         locale: 'ru',
@@ -45,14 +49,14 @@ export default function CalendarInput() {
         },
     }
 
-    const calendar = new Calendar('#calendar-input', options);
+    const calendar = new Calendar(`#${calendarId}`, options);
     calendar.init();
   }, []);
 
   return (
-    <div className=' h-[27px]'>
-        <input type="text" id="calendar-input" className='w-[150px] h-[27px] border-black border-[0.5px] text-[14px]/[18px] pl-[15px]'></input>
-        <div className="relative top-[-26px] right-[-119px]"><CalendarSvg/></div>
+    <div className='h-[27px] flex'>
+        <input type="text" id={calendarId} className='w-[150px] h-[27px] border-black border-[0.5px] text-[14px]/[18px] pl-[15px]'></input>
+        <div className="relative left-[-32px] top-[2px]"><CalendarSvg/></div>
     </div>
   );
 };

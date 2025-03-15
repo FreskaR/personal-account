@@ -18,7 +18,7 @@ export default function Page () {
             </div>
             <div className="flex items-center mb-[14px]">
                 <p className="w-[306px] text-[14px]/[18px] mr-[40px]">Дата соответствующего протокола</p>
-                <CalendarInput />
+                <CalendarInput calendarId="dateProtocol"/>
             </div>
             <div className="flex items-center mb-[14px]">
                 <p className="w-[306px] text-[14px]/[18px] mr-[40px]">Номер соответствующего протокола</p>
@@ -26,7 +26,7 @@ export default function Page () {
             </div>
             <div className="flex items-center mb-[14px]">
                 <p className="w-[306px] text-[14px]/[18px] mr-[40px]">Дата составленного списка лиц, имеющих право на получение доходов по ценным бумагам</p>
-                <CalendarInput />
+                <CalendarInput calendarId="dateCreatedList"/>
             </div>
           </div>
       </Step>
