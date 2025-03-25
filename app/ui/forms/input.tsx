@@ -14,7 +14,7 @@ export const InputForm = ({
 
   useEffect(() => {
       let storedValue = localStorage.getItem('inputText');
-      storedValue = storedValue || ''
+      storedValue = storedValue
       if (storedValue) {
         setInputText(storedValue)}
   },[]) 

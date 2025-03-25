@@ -13,7 +13,7 @@ const links = [
 export default function FormsMain () {
     const pathname = usePathname();
     return (
-        <div className="max-w-[1104px] h-[744px] border-[0.5px] border-black rounded-[28px] bg-[#F1F1F1] mt-[23px] pl-[71px] pt-[68px]">
+        <div className="w-[1104px] h-[744px] border-[0.5px] border-black rounded-[28px] bg-[#F1F1F1] mt-[23px] pl-[71px] pt-[68px]">
             <div className="mb-[54px]">
                 <h2 className="text-xl/[26px] font-bold mb-5">5.2 Распоряжения на предоставление информации Эмитенту для общего собрания акционеров</h2>
                 <Link

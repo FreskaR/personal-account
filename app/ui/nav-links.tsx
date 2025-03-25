@@ -5,12 +5,12 @@ import { usePathname } from "next/navigation";
 import clsx from 'clsx';
 
 const links = [
-  {name: 'Главная', href: '/forms/hidden/firstFirst'},
+  {name: 'Главная', href: '/'},
   {name: 'Запросы/Поручения', href: '/forms'},
-  {name: 'Собрания акционеров', href: '/'},
-  {name: 'Счета к оплате', href: '/'},
+  {name: 'Документы', href: '/userDocuments'},
+  {name: 'Проведенные операции', href: '/'},
   {name: 'Задать вопрос', href: '/'},
-  {name: 'Помощь', href: '/'},
+  {name: 'Помощь', href: '/forms/hidden/firstFirst'},
 ];
 
 export default function NavLinks () {
