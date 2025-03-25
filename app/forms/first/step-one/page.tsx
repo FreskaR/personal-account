@@ -29,12 +29,12 @@ export default function Page () {
                 <RadioButton name="decisionMadeBy" text="Советом директоров"/>
                 <div className="flex w-[457px]">
                   <RadioButton name="decisionMadeBy" text=""/>
-                  <InputForm placeholder="Введите наименование"/>
+                  <InputForm placeholder="Введите наименование" />
                 </div>
                 <div className="flex">
                   <div className="flex w-[149px] mr-[20px]">
                     <p className="text-[14px]/[18px] mr-[11px]">№</p>
-                    <InputForm placeholder=""/>
+                    <InputForm placeholder="" />
                   </div>
                   <p className="mr-[27px]">дата принятия решения</p>
                   <CalendarInput calendarId="dateDecision"/>
